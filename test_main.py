@@ -1,6 +1,6 @@
 from fastapi.testclient import TestClient
-from app.main import app          # import your FastAPI instance
-from main import app      # import directly from main.py
+from main import app
+from docker_without_sror.main import app      # import directly from main.py
 
 client = TestClient(app)
 
